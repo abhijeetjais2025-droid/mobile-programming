@@ -1,0 +1,773 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+
+/* Navigation */
+
+header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+
+.logo span {
+    color: #1e293b;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #475569;
+    font-weight: 500;
+}
+
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+
+.nav-btn {
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+
+/* Hero Section */
+
+.hero {
+    min-height: 650px;
+    padding: 90px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eff6ff,
+            #ffffff
+        );
+}
+
+
+.hero-content {
+    max-width: 600px;
+}
+
+
+.tag,
+.section-tag {
+    color: #2563eb;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+
+.hero-text {
+    font-size: 18px;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+.primary-btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+
+    padding: 14px 25px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.primary-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+.secondary-btn {
+    display: inline-block;
+
+    border: 1px solid #cbd5e1;
+    color: #334155;
+
+    padding: 14px 25px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* Stats */
+
+.stats {
+    display: flex;
+    gap: 35px;
+    margin-top: 45px;
+}
+
+
+.stats h3 {
+    font-size: 17px;
+}
+
+
+.stats p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+
+/* Hero Parking Card */
+
+.hero-image {
+    min-width: 400px;
+}
+
+
+.parking-card {
+    background: white;
+
+    padding: 28px;
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+
+.live {
+    color: #16a34a;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.parking-location {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.parking-location i {
+    color: #ef4444;
+    font-size: 22px;
+}
+
+
+.parking-location h4 {
+    font-size: 15px;
+}
+
+
+.parking-location p {
+    font-size: 12px;
+    color: #64748b;
+}
+
+
+.distance {
+    margin-left: auto;
+    font-size: 12px;
+    color: #2563eb;
+}
+
+
+.availability {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 25px 0;
+}
+
+
+.availability p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+
+.availability h2 {
+    font-size: 42px;
+    color: #16a34a;
+}
+
+
+.circle {
+    background: #eff6ff;
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+
+.parking-info {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 15px 0;
+    border-top: 1px solid #e2e8f0;
+
+    font-size: 14px;
+}
+
+
+.parking-card button {
+    width: 100%;
+
+    background: #2563eb;
+    color: white;
+
+    border: none;
+    padding: 14px;
+
+    border-radius: 8px;
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+/* General Section */
+
+section {
+    padding: 90px 8%;
+}
+
+
+.section-title {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+.section-title p {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.section-title h2 {
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+
+.section-title span {
+    color: #64748b;
+}
+
+
+/* Features */
+
+.feature-grid {
+
+    max-width: 1200px;
+    margin: 55px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.feature-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border: 1px solid #e5e7eb;
+
+    transition: 0.3s;
+}
+
+
+.feature-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.08);
+}
+
+
+.feature-card h3 {
+    margin: 20px 0 10px;
+}
+
+
+.feature-card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* Icons */
+
+.icon {
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    font-size: 22px;
+}
+
+
+.blue {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+
+.green {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+
+.orange {
+    background: #ffedd5;
+    color: #ea580c;
+}
+
+
+.purple {
+    background: #f3e8ff;
+    color: #9333ea;
+}
+
+
+.red {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+
+.yellow {
+    background: #fef9c3;
+    color: #ca8a04;
+}
+
+
+/* Problem Section */
+
+.problem {
+    background: #0f172a;
+    color: white;
+}
+
+
+.problem-content {
+
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr 0.8fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.problem-text h2 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+
+.problem-text > p {
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+
+/* Problem Points */
+
+.problem-points {
+    margin-top: 30px;
+}
+
+
+.problem-points div {
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 18px;
+}
+
+
+.problem-points i {
+    color: #60a5fa;
+}
+
+
+/* Solution Box */
+
+.solution-box {
+
+    background: white;
+    color: #1e293b;
+
+    padding: 40px;
+
+    border-radius: 20px;
+}
+
+
+.solution-icon {
+
+    width: 60px;
+    height: 60px;
+
+    background: #dbeafe;
+    color: #2563eb;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+
+    font-size: 25px;
+}
+
+
+.solution-box h2 {
+    margin: 20px 0 10px;
+}
+
+
+.solution-box p {
+    color: #64748b;
+}
+
+
+.solution-box ul {
+
+    list-style: none;
+
+    margin-top: 25px;
+}
+
+
+.solution-box li {
+
+    margin-bottom: 12px;
+
+    color: #334155;
+}
+
+
+/* Objectives */
+
+.objectives {
+    background: #f8fafc;
+}
+
+
+.objective-grid {
+
+    max-width: 1100px;
+    margin: 55px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.objective-card {
+
+    background: white;
+
+    padding: 25px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e5e7eb;
+}
+
+
+.objective-card span {
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+}
+
+
+/* CTA */
+
+.cta {
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1e40af
+        );
+
+    color: white;
+}
+
+
+.cta h2 {
+    font-size: 42px;
+}
+
+
+.cta p {
+    margin: 15px 0 30px;
+    color: #dbeafe;
+}
+
+
+.cta .primary-btn {
+    background: white;
+    color: #2563eb;
+}
+
+
+/* Footer */
+
+footer {
+
+    background: #0f172a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+
+.footer-logo {
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+
+footer p {
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .hero-buttons,
+    .stats {
+        justify-content: center;
+    }
+
+
+    .feature-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .problem-content {
+        grid-template-columns: 1fr;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+
+    .hero-image {
+        min-width: auto;
+        width: 100%;
+    }
+
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .objective-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    .navbar {
+        padding: 15px;
+    }
+
+
+    .nav-btn {
+        display: none;
+    }
+
+
+    section {
+        padding: 70px 6%;
+    }
+
+}
