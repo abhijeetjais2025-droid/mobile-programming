@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Card - jQuery</title>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: white;
+            padding-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            margin: 5px;
+        }
+
+        #profileCard {
+            width: 300px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: lightblue;
+            box-shadow: 0 5px 15px gray;
+        }
+
+        #profileCard img.profile {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        #profileCard img.qr {
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+        }
+
+        h2 {
+            margin-bottom: 5px;
+        }
+
+        #qrSection {
+            display: none;
+        }
+
+        .showQR {
+            background-color: green;
+        }
+
+        .close {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Profile</h1>
+
+    <div id="profileCard">
+
+        <!-- Profile Image -->
+        <img class="profile"
+             src="/Users/abhijeetjaiswal/Documents/mobile-programming/profile.jpeg"
+             alt="Profile Picture">
+
+        <h2>Abhijeet Jaiswal</h2>
+
+        <p><strong>Address:</strong> Kathmandu, Nepal</p>
+
+        <!-- Show QR Button -->
+        <button class="showQR" id="showButton">Show QR</button>
+
+        <!-- QR Section -->
+        <div id="qrSection">
+
+            <img class="qr"
+                 src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fabhijeet-jaiswal-11b981398"
+                 alt="LinkedIn QR Code">
+
+            <br>
+
+            <button class="close" id="closeButton">Close</button>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        // Show QR code
+        $("#showButton").click(function() {
+
+            $("#qrSection").show();
+
+            $("#profileCard").css("background-color", "lightgreen");
+
+        });
+
+        // Close QR code
+        $("#closeButton").click(function() {
+
+            $("#qrSection").hide();
+
+            $("#profileCard").css("background-color", "lightblue");
+
+        });
+
+    </script>
+
+</body>
+</html>
