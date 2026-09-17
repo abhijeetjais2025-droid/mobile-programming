@@ -1,0 +1,9 @@
+#profile-card{
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+}
+
+#highlighted{
+    background-color: rgb(249, 51, 6);
+}
